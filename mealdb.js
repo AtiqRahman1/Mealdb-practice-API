@@ -4,7 +4,8 @@ const searchFood = () => {
     // clear data
     searchField.value = '';
     if (searchText == '') {
-        // homework- 'please write something to display'
+        alert('put your text')
+        return;
     }
     else {
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`
